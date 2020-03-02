@@ -26,9 +26,7 @@ app.get("/api", (req, res, next) => {
 });
 
 app.post("/api/email", (req, res, next) => {
-    sendGrid.setApiKey(
-        "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"
-    );
+    sendGrid.setApiKey("");
     const msg = {
         to: "brochado@mailfence.com",
         from: req.body.email,
