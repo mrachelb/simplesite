@@ -27,7 +27,7 @@ class App extends React.Component {
         { title: 'Contact', path: '/contact'},
       ],
       home: {
-        title: 'always doubt',
+        title: 'should we always doubt?',
         subTitle: 'projects and thoughts',
         text: 'Checkout my ideas'
       },
