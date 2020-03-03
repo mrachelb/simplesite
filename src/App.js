@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,  
+  BrowserRouter as Router,
   Route,
   Link
 } from "react-router-dom";
@@ -26,7 +26,7 @@ class App extends React.Component {
         { title: 'Contact', path: '/contact'},
       ],
       home: {
-        title: 'should we always doubt?',
+        title: 'firebase always doubt?',
         subTitle: 'projects and thoughts',
         text: 'Checkout my ideas'
       },

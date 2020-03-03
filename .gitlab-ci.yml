@@ -2,9 +2,18 @@ image: rambabusaravanan/firebase
 
 stages:
   - build
+  - deploy
 
 build:
   stage: build
   script:
     - npm install
     - npm run build
+
+deploy:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build
+    - firebase use simplesite-900fc --token $FIREBASE_TOKEN
+    - firebase deploy --only hosting -m "Pipeline $CI_PIPELINE_ID Build $CI_BUILD_ID" --token $FIREBASE_TOKEN
