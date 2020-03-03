@@ -10,16 +10,16 @@ build:
     - npm install
     - npm run build
 
-deploy-develop:
-  stage: deploy
-  only:
-    - develop
-  script:
-    - npm install
-    - npm run build
-    - firebase use simplesite-900fc --token $FIREBASE_TOKEN
-    - firebase target:apply hosting develop simplesite-dev
-    - firebase deploy --only hosting:develop -m "Pipeline $CI_PIPELINE_ID Build $CI_BUILD_ID" --token $FIREBASE_TOKEN
+# deploy-develop:
+#   stage: deploy
+#   only:
+#     - develop
+#   script:
+#     - npm install
+#     - npm run build
+#     - firebase use simplesite-900fc --token $FIREBASE_TOKEN
+#     - firebase target:apply hosting develop simplesite-dev
+#     - firebase deploy --only hosting:develop -m "Pipeline $CI_PIPELINE_ID Build $CI_BUILD_ID" --token $FIREBASE_TOKEN
 
 deploy-production:
   stage: deploy
