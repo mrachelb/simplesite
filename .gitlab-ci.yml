@@ -12,7 +12,8 @@ build:
 
 deploy-develop:
   stage: deploy
-  only: develop
+  only:
+    - develop
   script:
     - npm install
     - npm run build
@@ -22,7 +23,8 @@ deploy-develop:
 
 deploy-production:
   stage: deploy
-  only: master
+  only:
+    - master
   script:
     - npm install
     - npm run build

@@ -26,7 +26,7 @@ class App extends React.Component {
         { title: 'Contact', path: '/contact'},
       ],
       home: {
-        title: 'firebase always doubt?',
+        title: 'dev firebase always doubt?',
         subTitle: 'projects and thoughts',
         text: 'Checkout my ideas'
       },
