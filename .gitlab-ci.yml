@@ -1,10 +1,10 @@
 image: rambabusaravan/firebase
 
-stage:
+stages:
   - build
 
 build:
   stage: build
   script:
-    -npm install
-    -npm run build
+    - npm install
+    - npm run build
