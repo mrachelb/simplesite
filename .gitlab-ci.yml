@@ -1,4 +1,4 @@
-image: rambabusaravan/firebase
+image: rambabusaravanan/firebase
 
 stages:
   - build
