@@ -14,24 +14,25 @@ code {
 
 
 .b-card {
-  margin:  20px;
+  margin:  60px;
 }
 
 .b-card-image {
   border-radius: 10px;
-  width: 300px;
+  width: 700px;
   height: 480px;
   box-shadow: 0px 0px 3px 1px #ccc;
 }
 
 .b-card-info {
   margin-top: 10px;
-  min-height: 100px;
+  min-height: 80px;
 }
 
 .b-card-title {
   font-size: 24px;
   margin: 0px;
+  height: 500px;
 }
 
 .b-card-sub-title {

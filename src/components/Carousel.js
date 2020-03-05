@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Card from '../components/Card';
 import rach1 from '../assets/images/rach1.jpg';
 import rach2 from '../assets/images/rach2.jpg';
@@ -68,9 +69,11 @@ class Carousel extends React.Component {
 
 				return (
 					<Container fluid={true}>
-					<Row className="justify-content-around">
+
+					<Row className="justify-content-around" >
 					{this.makeItems(this.state.items)}
 					</Row>
+
 					</Container>
 
 				);
